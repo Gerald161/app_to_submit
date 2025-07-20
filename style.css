@@ -225,9 +225,9 @@ nav .links_plus_join .join_links .register_btn:hover{
 }
 
 .reveal_small_navigator{
-    padding: 20px;
-    max-height: 1000px;
-    height: 69.4vh;
+    padding: 0;
+    max-height: 0;
+    height: 0;
 }
 
 .small_navigator .links{
@@ -846,6 +846,12 @@ footer .availability_section .availability_container .availability .img_containe
 
     nav .links_plus_join .join_links .more_options_button{
         display: block;
+    }
+
+    .reveal_small_navigator{
+      padding: 20px;
+      max-height: 1000px;
+      height: 69.4vh;
     }
 
     .about_landing_section{
