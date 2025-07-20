@@ -1,3 +1,6 @@
+/* remember to use variables for the colors */
+/* universal padding is padding: 30px 45px; */
+
 *{
     margin: 0;
     padding: 0;
@@ -7,15 +10,14 @@
 }
 
 header{
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav{
     background-color: white;
     padding: 30px 45px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
     display: flex;
     align-items: center;
@@ -1047,6 +1049,11 @@ footer .availability_section .availability_container .availability .img_containe
     .journey_section .journey_left .journey_title{
         font-size: 36px;
     }
+
+    /* .journey_section .journey_right{
+        width: 100%;
+        padding: 40px 20px;
+    } */
 
     .journey_section .journey_right .journey_card{
         padding: 30px 20px;
