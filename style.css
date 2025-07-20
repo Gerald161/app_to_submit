@@ -9,6 +9,10 @@
 	font-family: "Poppins", sans-serif;
 }
 
+header{
+    position: relative;
+}
+
 nav{
     background-color: white;
     padding: 30px 45px;
@@ -205,6 +209,60 @@ nav .links_plus_join .join_links .register_btn{
 }
 
 nav .links_plus_join .join_links .register_btn:hover{
+    background-color: #cc3d26;
+}
+
+.small_navigator{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.reveal_small_navigator{
+    padding: 20px;
+    max-height: 1000px;
+    height: 69.4vh;
+}
+
+.small_navigator .links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.small_navigator .links a{
+    text-decoration: none;
+	color: black;
+    transition: color 0.3s;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.small_navigator .links .active,
+.small_navigator .links a:hover{
+    color: #ff5634;
+}
+
+.small_navigator .get_started_btn{
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: #ff5634;
+    color: white;
+    transition: all 0.3s;
+}
+
+.small_navigator .get_started_btn:hover{
     background-color: #cc3d26;
 }
 
