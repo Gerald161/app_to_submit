@@ -1,6 +1,3 @@
-/* remember to use variables for the colors */
-/* universal padding is padding: 30px 45px; */
-
 *{
     margin: 0;
     padding: 0;
@@ -1050,11 +1047,6 @@ footer .availability_section .availability_container .availability .img_containe
     .journey_section .journey_left .journey_title{
         font-size: 36px;
     }
-
-    /* .journey_section .journey_right{
-        width: 100%;
-        padding: 40px 20px;
-    } */
 
     .journey_section .journey_right .journey_card{
         padding: 30px 20px;
