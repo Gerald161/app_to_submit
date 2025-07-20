@@ -258,12 +258,6 @@ nav {
   overflow: hidden;
   transition: all 0.4s ease-in-out;
 
-  &.reveal_small_navigator {
-    padding: 0;
-    max-height: 0;
-    height: 0;
-  }
-
   .links {
     display: flex;
     flex-direction: column;
@@ -298,6 +292,12 @@ nav {
       background-color: $primary-hover;
     }
   }
+}
+
+.reveal_small_navigator {
+  padding: 0;
+  max-height: 0;
+  height: 0;
 }
 
 .about_landing_section {
