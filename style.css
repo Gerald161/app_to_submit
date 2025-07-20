@@ -72,7 +72,7 @@ nav .links_plus_join .links_container .dropdown_plus_options .pages_dropdown p{
     font-size: 16px;
 }
 
-nav .links_plus_join .links_container .dropdown_plus_options .pages_dropdown::after {
+nav .links_plus_join .links_container .dropdown_plus_options .pages_dropdown::after{
     content: '';
     position: absolute;
     top: 100%;
@@ -165,6 +165,27 @@ nav .links_plus_join .join_links a{
     font-size: 16px;
     padding: 15px 25px;
     border-radius: 10px;
+}
+
+nav .links_plus_join .join_links .nav_link{
+    text-decoration: none;
+	color: black;
+    transition: color 0.3s;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+nav .links_plus_join .join_links .nav_link:hover{
+    color: #ff5634;
+}
+
+nav .links_plus_join .join_links .more_options_button{
+    display: none;
+    cursor: pointer;
+}
+
+nav .links_plus_join .join_links .more_options_button i{
+    font-size: 1.5em;
 }
 
 nav .links_plus_join .join_links .download_btn{
@@ -433,7 +454,7 @@ nav .links_plus_join .join_links .register_btn:hover{
     padding: 50px 45px;
 }
 
-.partners_section  .text_content{
+.partners_section .text_content{
     width: 60%;
     display: flex;
     align-items: center;
@@ -651,7 +672,6 @@ footer .menu_pages{
     display: flex;
     background-color: white;
     justify-content: space-around;
-    /* width: 600px; */
     gap: 20px;
     border-radius: 10px;
 }
@@ -737,6 +757,7 @@ footer .availability_section .availability_container .availability .img_containe
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .copyright p{
@@ -753,25 +774,210 @@ footer .availability_section .availability_container .availability .img_containe
     color: black;
 }
 
-@media (max-width: 768px) {
-    .featured_comments{
-        grid-template-columns: 1fr;
+@media (max-width: 1100px){
+    nav{
+        padding: 30px 20px;
+    }
+
+    nav .links_plus_join .links_container{
+        display: none;
+    }
+
+    nav .links_plus_join .join_links{
+        gap: 10px;
+    }
+
+    nav .links_plus_join .join_links .more_options_button{
+        display: block;
+    }
+
+    .about_landing_section{
+        padding: 50px 20px;
+        flex-direction: column;
+    }
+
+    .about_landing_section .content_container{
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about_landing_section .image_section .image_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_landing_section .image_section .image_container img{
+        width: 80%;
+        height: 80%;
+    }
+
+    .positive_reviews_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+        padding: 30px 20px;
+        justify-items: center;
+    }
+    
+    .positive_reviews_container .stat{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .positive_reviews_container .stat h1{
+        font-size: 2.2em;
+        margin-bottom: 8px;
+    }
+    
+    .positive_reviews_container .stat p{
+        font-size: 0.9em;
+        margin: 0;
+    }
+
+    .about_section{
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+        margin: 0;
+    }
+
+    .about_section .content_container .heading{
+        font-size: 1.3em;
+    }
+
+    .second_about_section{
+        flex-direction: column;
+    }
+
+    .journey_section{
         padding: 20px;
-        gap: 15px;
+        background-color: #fafafa;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
-    
-    .featured_comments .comment{
-        height: 350px;
-        padding: 30px;
+
+    .journey_section .journey_left{
+        width: 100%;
+        position: relative;
+        top: 0;
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    
-    .featured_comments .comment .headline{
-        font-size: 24px;
+
+    .journey_section .journey_right{
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .journey_section .journey_right .journey_card{
+        width: 100%;
+    }
+
+    .partners_section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 20px;
+    }
+
+    .partners_section .text_content{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .partners_section .text_content h2{
+        font-size: 1.5em;
+    }
+
+    .all_partners_container{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 50px;
+    }
+
+    .all_partners_container .partner .image_container img{
+        width: 90%;
+        height: 90%;
+    }
+
+    .partners_section_second{
+        padding: 30px 20px;
+    }
+
+    .partners_section_second  .text_content{
+        width: 100%;
+    }
+
+    .partners_section_second .text_content h2{
+        font-size: 1.6em;
+    }
+
+    .download_links_container{
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .download_links_container .right_section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .download_links_container .right_section .download_btn{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer{
+        padding: 20px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    footer .menu_pages{
+        flex-direction: column;
     }
 }
 
-/* Responsive design for journey */
+@media (max-width: 800px){
+    nav .links_plus_join .join_links .download_btn,
+    nav .links_plus_join .join_links .register_btn
+    {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
+    .positive_reviews_container {
+        padding: 20px 15px;
+        gap: 25px;
+    }
+    
+    .positive_reviews_container .stat h1 {
+        font-size: 2em;
+    }
+    
+    .positive_reviews_container .stat p {
+        font-size: 0.85em;
+    }
+
     .journey_section{
         flex-direction: column;
     }
@@ -787,17 +993,32 @@ footer .availability_section .availability_container .availability .img_containe
         font-size: 36px;
     }
 
-    .journey_section .journey_right{
+    /* .journey_section .journey_right{
         width: 100%;
         padding: 40px 20px;
-    }
+    } */
 
     .journey_section .journey_right .journey_card{
         padding: 30px 20px;
         margin-bottom: 40px;
     }
 
-    .journey_section .journey_right .journey_card .journey_milestone {
+    .journey_section .journey_right .journey_card .journey_milestone{
         font-size: 20px;
+    }
+
+    .featured_comments{
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 15px;
+    }
+    
+    .featured_comments .comment{
+        height: 350px;
+        padding: 30px;
+    }
+    
+    .featured_comments .comment .headline{
+        font-size: 24px;
     }
 }
